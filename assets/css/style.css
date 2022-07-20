@@ -371,6 +371,10 @@ hr {
   .hero-content h1 {
     font-size: 32px;
   }
+  .hero-img img {
+    max-width: 100%;
+    padding-left: 20px;
+  }
   .blog-wrapper {
     flex-direction: column;
   }
