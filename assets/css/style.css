@@ -41,7 +41,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #161616;
+  background: linear-gradient(#161616, #181818);
   padding: 0 50px;
   margin-top: 50px;
   border-radius: 30px;
@@ -59,6 +59,7 @@ li {
 
 .hero-img img {
   max-width: 80%;
+  margin-bottom: -5px;
 }
 
 .hero-content h1 {
@@ -219,7 +220,7 @@ article.single-blog,
 /* Footer Section CSS Start */
 
 .footer-wrapper {
-  background: #161616;
+  background: linear-gradient(#161616, #181818);
   padding: 100px 0;
 }
 
@@ -284,7 +285,7 @@ hr {
 /* Upcoming Match Page CSS Start */
 
 .single-match {
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
 .match-top {
@@ -314,6 +315,8 @@ hr {
 
 /* Media Queries For Responsive */
 
+/* Small/Mobile Devices */
+
 @media only screen and (max-width: 576px) {
   .hero-wrapper {
     flex-direction: column;
@@ -341,8 +344,13 @@ hr {
   .blog-right {
     width: 100%;
   }
+  .blog-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
   .blog-buttons a {
     border: 1px solid #e8e8e8;
+    padding: 15px 30px;
   }
   .blogs,
   .upcoming-match {
@@ -353,6 +361,8 @@ hr {
     flex-direction: column;
   }
 }
+
+/* Medium/Tab Devices */
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .hero-wrapper {
