@@ -1,0 +1,391 @@
+/* Base Styles Start */
+
+/* Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Base Styles End */
+
+/* Hero Section CSS Start */
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #161616;
+  padding: 0 50px;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+
+.hero-content {
+  max-width: 50%;
+  padding: 50px 0;
+}
+
+.hero-img {
+  text-align: right;
+  padding-top: 50px;
+}
+
+.hero-img img {
+  max-width: 80%;
+}
+
+.hero-content h1 {
+  font-weight: 700;
+  font-size: 52px;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  padding: 10px 0 40px;
+}
+
+.hero-content .hero-btn {
+  background: #e7b900;
+  color: #ffffff;
+  border: 1px solid #e7b900;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.hero-content .hero-btn:hover {
+  background: transparent;
+  color: #e7b900;
+  border: 1px solid #e7b900;
+}
+
+.hero-content .hero-btn i {
+  padding-left: 5px;
+  transition: 0.3s;
+}
+.hero-btn:hover i {
+  padding-left: 8px;
+  color: #e7b900;
+}
+
+/* Hero Section CSS End */
+
+/* Blog Section CSS Start */
+
+section#Blog {
+  padding: 80px 0;
+}
+
+.blog-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.blog-left {
+  max-width: 300px;
+  width: 100%;
+  background: #161616;
+  padding: 30px;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+.blog-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-buttons a {
+  background: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  color: #161616;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.blog-buttons .active {
+  background: #e7b900;
+  color: #ffffff;
+}
+
+.blog-buttons a:nth-child(2) {
+  margin: 30px 0;
+}
+
+.blogs,
+.upcoming-match {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+article.single-blog,
+.single-match {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #161616;
+  border: 1px solid #161616;
+  padding: 6px 22px;
+  border-radius: 10px;
+}
+
+.blog-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #161616;
+  padding-top: 20px;
+}
+
+.blog-status {
+  display: flex;
+  padding-top: 20px;
+}
+
+.blog-status span {
+  font-size: 18px;
+  color: #161616b3;
+}
+.blog-status span:last-child {
+  padding-left: 30px;
+}
+
+.blog-status span i {
+  padding-right: 10px;
+}
+
+.view-btn {
+  text-align: center;
+  margin-top: 50px;
+  display: none;
+}
+
+.view-btn a {
+  background: #e7b900;
+  color: #ffffff;
+  border: 1px solid #e7b900;
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-btn a:hover {
+  background: transparent;
+  color: #e7b900;
+  border: 1px solid #e7b900;
+}
+
+/* Blog Section CSS End */
+
+/* Footer Section CSS Start */
+
+.footer-wrapper {
+  background: #161616;
+  padding: 100px 0;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo a {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+hr {
+  border: 1px solid #ffffff1a;
+  margin: 50px 0;
+}
+
+.footer-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-menu ul li {
+  padding: 15px 0;
+}
+
+.footer-menu ul li a {
+  color: #b9b9b9;
+  padding: 0 20px;
+}
+
+.social-link {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.social-link i {
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 15px;
+  padding: 7px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-link i:hover {
+  background: #ffffff;
+  color: #161616;
+  border: 1px solid #ffffff;
+}
+
+/* Footer Section CSS End */
+
+/* Upcoming Match Page CSS Start */
+
+.single-match {
+  padding: 30px 20px;
+}
+
+.match-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.match-top span {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0 15px;
+}
+
+.match-content {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.match-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+/* Upcoming Match Page CSS End */
+
+/* Media Queries For Responsive */
+
+@media only screen and (max-width: 576px) {
+  .hero-wrapper {
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 50px 20px 0;
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 25px;
+  }
+  .hero-img {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .blog-wrapper {
+    flex-direction: column;
+  }
+  .blog-left {
+    max-width: 100%;
+    background: transparent;
+  }
+  .blog-right {
+    width: 100%;
+  }
+  .blog-buttons a {
+    border: 1px solid #e8e8e8;
+  }
+  .blogs,
+  .upcoming-match {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 20px;
+  }
+  .footer-menu ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .hero-wrapper {
+    margin: 50px 20px 0;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .blog-wrapper {
+    flex-direction: column;
+  }
+  .blog-left {
+    max-width: 100%;
+    background: transparent;
+  }
+  .blog-right {
+    width: 100%;
+  }
+  .blog-buttons {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .blog-buttons a {
+    width: 220px;
+    border: 1px solid #e8e8e8;
+  }
+  .blogs,
+  .upcoming-match {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 20px;
+  }
+  .view-btn {
+    display: block;
+  }
+}
