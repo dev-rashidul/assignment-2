@@ -41,7 +41,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(#161616, #181818);
+  background: linear-gradient(#020132, #001a56);
   padding: 0 50px;
   margin-top: 50px;
   border-radius: 30px;
@@ -59,7 +59,8 @@ li {
 
 .hero-img img {
   max-width: 80%;
-  margin-bottom: -5px;
+  position: relative;
+  bottom: -5px;
 }
 
 .hero-content h1 {
@@ -92,7 +93,21 @@ li {
 .hero-content .hero-btn i {
   padding-left: 5px;
   transition: 0.3s;
+  animation: anim 2s infinite;
 }
+
+@keyframes anim {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(5px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
 .hero-btn:hover i {
   padding-left: 8px;
   color: #e7b900;
@@ -114,7 +129,7 @@ section#Blog {
 .blog-left {
   max-width: 300px;
   width: 100%;
-  background: #161616;
+  background: linear-gradient(#020132, #001a56);
   padding: 30px;
   margin-right: 25px;
   border-radius: 10px;
@@ -220,7 +235,7 @@ article.single-blog,
 /* Footer Section CSS Start */
 
 .footer-wrapper {
-  background: linear-gradient(#161616, #181818);
+  background: linear-gradient(#020132, #001a56);
   padding: 100px 0;
 }
 
